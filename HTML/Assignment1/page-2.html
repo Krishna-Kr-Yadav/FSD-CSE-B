@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h1><center>CSS - Cascading Style Sheets</center></h1>
+
+    <!-- Paragraph -->
+    <p>
+        CSS (Cascading Style Sheets) is used to style and format HTML documents.  
+        It controls the colors, fonts, layout, and overall look of a webpage.  
+        CSS makes webpages more attractive and user-friendly.
+    </p>
+
+    <!-- Sub-headings -->
+    <h2>Types of CSS</h2>
+    <ul>
+        <li><b>Inline CSS</b> → Written inside an HTML tag using the <code>style</code> attribute.</li>
+        <li><b>Internal CSS</b> → Written inside a <code>&lt;style&gt;</code> tag in the HTML file.</li>
+        <li><b>External CSS</b> → Written in a separate <code>.css</code> file and linked using <code>&lt;link&gt;</code>.</li>
+    </ul>
+
+    <!-- Inline CSS Example -->
+    <h2>Example of Inline CSS</h2>
+    <p style="color: blue; font-size: 18px;">
+        This paragraph is styled using <b>Inline CSS</b>.
+    </p>
+
+    <!-- Internal CSS Example -->
+    <h2>Example of Internal CSS</h2>
+    <style>
+        .internal-demo {
+            color: green;
+            background-color: lightyellow;
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid green;
+        }
+    </style>
+    <p class="internal-demo">This paragraph is styled using <b>Internal CSS</b>.</p>
+
+    <!-- External CSS Example (just explained here) -->
+    <h2>Example of External CSS</h2>
+    <p>
+        External CSS is written in a separate <code>style.css</code> file and linked like this:  
+    </p>
+    <pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+    </pre>
+
+    <!-- Table -->
+    <h2>Common CSS Properties</h2>
+    <table border="1" width="60%">
+        <tr>
+            <th>Property</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Sets the text color</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>Sets the background color</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Changes the size of the text</td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>Sets border around an element</td>
+        </tr>
+        <tr>
+            <td>margin & padding</td>
+            <td>Controls space outside & inside an element</td>
+        </tr>
+    </table>
+
+    <!-- Ordered List -->
+    <h2>Steps to Apply CSS</h2>
+    <ol>
+        <li>Choose the type of CSS (inline, internal, or external).</li>
+        <li>Write the CSS properties and values.</li>
+        <li>Save your file.</li>
+        <li>Open it in a browser to see the styling applied.</li>
+    </ol>
+
+    <br>
+    <hr>
+    <p><center>Created as a basic CSS example by <font color="red">ChatGPT</font></center></p>
+</body>
+</html>

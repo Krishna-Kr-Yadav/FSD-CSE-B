@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h1><center>JavaScript - Programming for the Web</center></h1>
+
+    <!-- Paragraph -->
+    <p>
+        JavaScript is a programming language used to make webpages <b>interactive</b>.  
+        While HTML structures the content and CSS styles it, JavaScript adds dynamic behavior like  
+        animations, event handling, form validation, and much more.
+    </p>
+
+    <!-- Sub-headings -->
+    <h2>Where to Write JavaScript</h2>
+    <ul>
+        <li><b>Inline JavaScript</b> → inside an HTML tag using the <code>onclick</code> or similar attributes.</li>
+        <li><b>Internal JavaScript</b> → inside a <code>&lt;script&gt;</code> tag in the HTML file.</li>
+        <li><b>External JavaScript</b> → in a separate <code>.js</code> file linked with <code>&lt;script src="..."&gt;</code>.</li>
+    </ul>
+
+    <!-- Inline JavaScript Example -->
+    <h2>Example of Inline JavaScript</h2>
+    <button onclick="alert('Hello! This is Inline JavaScript.')">Click Me</button>
+
+    <!-- Internal JavaScript Example -->
+    <h2>Example of Internal JavaScript</h2>
+    <button onclick="changeText()">Change Text Below</button>
+    <p id="demo">This text will change when you click the button.</p>
+
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "The text has been changed using JavaScript!";
+        }
+    </script>
+
+    <!-- External JavaScript Example (explained only) -->
+    <h2>Example of External JavaScript</h2>
+    <p>
+        External JavaScript is written in a separate file (e.g., <code>script.js</code>)  
+        and linked like this:
+    </p>
+    <pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+    </pre>
+
+    <!-- Table -->
+    <h2>Common JavaScript Functions</h2>
+    <table border="1" width="70%">
+        <tr>
+            <th>Function / Feature</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>alert()</td>
+            <td>Displays a message in a popup box</td>
+        </tr>
+        <tr>
+            <td>document.write()</td>
+            <td>Writes content directly to the page</td>
+        </tr>
+        <tr>
+            <td>getElementById()</td>
+            <td>Accesses an HTML element by its ID</td>
+        </tr>
+        <tr>
+            <td>console.log()</td>
+            <td>Logs messages to the browser console</td>
+        </tr>
+        <tr>
+            <td>Events (onclick, onmouseover)</td>
+            <td>Perform actions when users interact with elements</td>
+        </tr>
+    </table>
+
+    <!-- Ordered List -->
+    <h2>Steps to Use JavaScript</h2>
+    <ol>
+        <li>Choose inline, internal, or external JavaScript.</li>
+        <li>Write functions or scripts inside <b>&lt;script&gt;</b> tags or .js file.</li>
+        <li>Connect JavaScript with HTML elements (using IDs, classes, or events).</li>
+        <li>Run your webpage in a browser to see it in action.</li>
+    </ol>
+
+    <br>
+    <hr>
+    <p><center>Created as a basic JavaScript example by <font color="red">ChatGPT</font></center></p>
+</body>
+</html>
+

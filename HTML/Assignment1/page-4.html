@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to React</title>
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <!-- Root element for React -->
+  <div id="root"></div>
+
+  <!-- React code -->
+  <script type="text/babel">
+    function App() {
+      return (
+        <div style={{ padding: "20px", fontFamily: "Arial" }}>
+          {/* Heading */}
+          <h1 style={{ textAlign: "center" }}>React - A JavaScript Library for UI</h1>
+
+          {/* Intro */}
+          <p>
+            React is an open-source JavaScript library developed by <b>Facebook</b> 
+            for building user interfaces. It helps create <b>reusable components</b> 
+            and efficiently updates the UI using a virtual DOM.
+          </p>
+
+          {/* List */}
+          <h2>Why use React?</h2>
+          <ul>
+            <li>Component-based architecture</li>
+            <li>Fast rendering with Virtual DOM</li>
+            <li>Reusable UI elements</li>
+            <li>Strong community and ecosystem</li>
+          </ul>
+
+          {/* Example */}
+          <h2>React Example</h2>
+          <p>Below is a simple button that updates text when clicked:</p>
+          <Counter />
+
+          {/* Table */}
+          <h2>Common React Features</h2>
+          <table border="1" width="70%">
+            <tr>
+              <th>Feature</th>
+              <th>Usage</th>
+            </tr>
+            <tr>
+              <td>JSX</td>
+              <td>Write HTML inside JavaScript</td>
+            </tr>
+            <tr>
+              <td>Components</td>
+              <td>Reusable building blocks for UI</td>
+            </tr>
+            <tr>
+              <td>Props</td>
+              <td>Pass data to components</td>
+            </tr>
+            <tr>
+              <td>State</td>
+              <td>Handle dynamic data inside components</td>
+            </tr>
+            <tr>
+              <td>Hooks</td>
+              <td>Functions like <code>useState</code> and <code>useEffect</code> for logic</td>
+            </tr>
+          </table>
+
+          {/* Steps */}
+          <h2>Steps to Create a React App</h2>
+          <ol>
+            <li>Install Node.js and npm.</li>
+            <li>Run <code>npx create-react-app my-app</code>.</li>
+            <li>Write components inside <code>.jsx</code> files.</li>
+            <li>Run <code>npm start</code> to launch your app.</li>
+          </ol>
+
+          <hr />
+          <p style={{ textAlign: "center" }}>Created as a basic React example by <font color="red">ChatGPT</font></p>
+        </div>
+      );
+    }
+
+    // A small component with state
+    function Counter() {
+      const [count, setCount] = React.useState(0);
+
+      return (
+        <div>
+          <p>You clicked {count} times</p>
+          <button onClick={() => setCount(count + 1)}>Click Me</button>
+        </div>
+      );
+    }
+
+    // Render the App
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+</html>
+
