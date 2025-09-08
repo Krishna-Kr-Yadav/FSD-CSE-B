@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="image" href="../assets/image_0.jpg">
+    <style>
+        *{
+            /* box-sizing: border-box;
+            margin:0;
+            padding: 0; */
+        }
+        .container{
+            width: 100vw;
+            padding: 10px;
+            height: 100vh;
+            background-color: aqua;
+            border: 2px solid black;
+            color: black;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .box{
+            width: 300px;
+            padding: 10px;
+            height: 300px;
+            background-color: yellowgreen;
+            border: 2px solid black;
+            color: black;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+</head>
+<body>
+    <!-- <div class="container">
+        BOX1
+    </div>
+    <div class="container">
+        BOX2
+    </div>
+    <div class="container">
+        BOX3
+    </div> -->
+    <div class="container">
+        <div class="box" style="order: 5;">Box1</div>
+        <div class="box" style="order: 3;">Box2</div>
+        <div class="box" style="order: 4;">Box3</div>
+        <div class="box" style="order: 2;">Box4</div>
+        <div class="box" style="order: 6;">Box5</div>
+        <div class="box" style="order: 1;">Box6</div>
+    </div>
+</body>
+</html>
