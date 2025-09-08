@@ -7,13 +7,46 @@
 </head>
 <body>
     <h1>Register Here</h1>
-    <form method="get" action="register.js">
+    <!-- <form method="get" action="register.js">
         Name:<input type="text" name="uname" placeholder="Enter the user name: " required/><br/>
         Mobile Number:<input type="number" placeholder="Enter the mobile number: " required/><br/>
         Email:<input type="email" placeholder="Enter the email: " required/><br/>
         <input type="submit" value="Register"/>
 
-        <input type="reset" value="Reset"/>
+        <input type="reset" value="Reset"/> -->
+    <form name="register" method="post" action="/register">
+        <label for="name">Name</label>
+        <input type="text" name="uname" placeholder="Enter the user name" required><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter the email"><br><br>
+        <label for="mobile">Mobile</label>
+        <input type="number" name="mobile" placeholder="Enter your mobile number"><br><br>
+        <label for="date">DOB</label>
+        <input type="date" name="DOB" placeholder="Enter the date of Birth"><br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="M" checked>Male
+        <input type="radio" name="gender" value="F">Female <br><br>
+        <label for="branch">Branch</label>
+        <select name="branch" id="">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE-DS">CSE-DS</option>
+            <option value="CSE-AIML">CSE-AIML</option>
+            <option value="IT">IT</option>
+        </select> <br><br>
+        <label for="year">Year</label>
+        <select name="year" id="">
+            <option value="1">I</option>
+            <option value="2">II</option>
+            <option value="3">III</option>
+            <option value="4">IV</option>
+        </select> <br><br>
+        <label for="addresss">Address</label>
+        <textarea name="addresss" cols="50" rows="5" placeholder="Enter Current Address"></textarea><br><br>
+        <label for="certificate">Upload Class 12th Certificate</label>
+        <input type="file" name="certificate"> <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
     </form>
 </body>
 </html>
