@@ -53,18 +53,7 @@ function displayData(){
     })
 }
 
-// register(()=>{
-//     sendEmail(()=>{
-//         Login(()=>{
-//             getData(()=>{
-//                 displayData();
-//             })
-//         })
-//     })
-// })
-
-
-//USING PROMISE
+// USING PROMISE
 // register()
 // .then(sendEmail)
 // .then(Login)
