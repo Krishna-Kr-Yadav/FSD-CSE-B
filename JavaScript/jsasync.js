@@ -38,6 +38,8 @@ register(()=>{
     })
 })
 
+register.then(sendEmail).then(Login).then(getData).then(displayData);
+
 
 // register();
 // sendEmail();
