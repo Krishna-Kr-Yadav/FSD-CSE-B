@@ -28,6 +28,7 @@ function displayData(){
     },2000);
 }
 
+// Callback Hell
 register(()=>{
     sendEmail(()=>{
         Login(()=>{
@@ -37,13 +38,4 @@ register(()=>{
         })
     })
 })
-
-register.then(sendEmail).then(Login).then(getData).then(displayData);
-
-
-// register();
-// sendEmail();
-// Login();
-// getData();
-// displayData();
-// console.log("call other applications");
+console.log("Other tasks");
