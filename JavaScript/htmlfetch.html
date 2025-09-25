@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of Users</title>
+    <style>
+        table{
+            background-color: yellow;
+            color: red;
+            border: 2px solid green;
+            width: 80%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>List of users</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Email</th>
+          <th>IP Address</th>
+          <th>MAC Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          const url = "https://dummyjson.com/users";
+
+          const fetchData = async () => {
+            try {
+              const res = await fetch(url);
+              const jsonData = await res.json();
+              jsonData.users.forEach((data) => {
+                const row=document.createElement("tr");
+
+                const col1=document.createElement("td");
+                col1.innerText=data.firstName;
+                row.appendChild(col1);
+
+                const col2=document.createElement("td");
+                col2.innerText=data.email;
+                row.appendChild(col2);
+                
+                const col3=document.createElement("td");
+                col3.innerText=data.ip;
+                row.appendChild(col3);
+
+                const col4=document.createElement("td");
+                col4.innerText=data.macAddress;
+                row.appendChild(col4);
+
+                const tbody=document.querySelector('tbody');
+                tbody.appendChild(row);
+                
+                // console.log("Name: ", data.firstName);
+                // console.log("Email: ", data.email);
+                // console.log("IP: ", data.ip);
+                // console.log("Mac: ", data.macAddress);
+                // console.log("#####################################");
+              });
+            } catch (err) {
+              console.error("Error: ", err.message);
+            }
+          };
+          fetchData();
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>
