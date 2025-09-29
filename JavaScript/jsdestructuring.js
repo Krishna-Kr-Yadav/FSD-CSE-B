@@ -26,3 +26,12 @@
 
 // rest -> to collect the data
 // spread -> to spread the data
+
+//rest
+const num=[1,2,3,4,5,6,7];
+const [f,s,...rest]=num;
+console.log(f);
+console.log(s);
+console.log(rest);
+
+
