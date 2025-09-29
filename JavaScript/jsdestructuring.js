@@ -27,11 +27,25 @@
 // rest -> to collect the data
 // spread -> to spread the data
 
-//rest
+//rest on array
 const num=[1,2,3,4,5,6,7];
 const [f,s,...rest]=num;
 console.log(f);
 console.log(s);
 console.log(rest);
+
+//rest on objects
+const obj={name:"krishna",id:3,email:"abc@gmail.com"};
+const {name,...other}=obj;
+console.log(name);
+console.log(other);
+
+
+//spread on arrays
+const arr1=[1,2];
+const arr2=[3,4,5];
+
+const arr=[...arr1,...arr2];
+console.log(arr);
 
 
