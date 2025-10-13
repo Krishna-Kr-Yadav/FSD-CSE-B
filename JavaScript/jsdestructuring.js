@@ -49,3 +49,7 @@ const arr=[...arr1,...arr2];
 console.log(arr);
 
 
+//mounting
+//update
+//unmounting
+
