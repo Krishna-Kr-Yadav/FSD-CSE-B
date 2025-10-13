@@ -6,3 +6,4 @@ new js code -> old js code using Babble
 cra->Webpack
 vite->esbuild (performance better than Webpack) 
 HTML DOM->React DOM->Application pack->Vite 
+lifecyle-> mount update unmount
