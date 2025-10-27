@@ -4,3 +4,5 @@
 4. npm i babel
 bundler-> Parcel Vite ES-build -> transpiler + development server
 5. npm un babel
+6. npm i Parcel
+7. npm start

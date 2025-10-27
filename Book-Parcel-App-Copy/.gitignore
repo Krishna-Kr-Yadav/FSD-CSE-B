@@ -1,0 +1,5 @@
+#Dependecy folders
+node_modules/
+#parcel build files
+dist/
+.parcel-cache/
