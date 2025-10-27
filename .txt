@@ -1,0 +1,6 @@
+1. npm init
+2. npm i react
+3. npm i react-dom
+4. npm i babel
+bundler-> Parcel Vite ES-build -> transpiler + development server
+5. npm un babel
