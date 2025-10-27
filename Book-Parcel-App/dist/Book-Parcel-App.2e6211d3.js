@@ -207,11 +207,11 @@
       });
     }
   }
-})({"cAXQq":[function(require,module,exports,__globalThis) {
+})({"edK2g":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 51917;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -17408,52 +17408,51 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _appCss = require("./App.css");
 var _bookJsx = require("./Book.jsx");
 var _bookJsxDefault = parcelHelpers.interopDefault(_bookJsx);
-// const App=()=>{
-//     return (
-//         <div className='bookList'>
-//             <Book image="https://tse2.mm.bing.net/th/id/OIP.RM5JkPJFCnEs3bCJnjK7dwAAAA?pid=Api&P=0&h=180" name="React" price="₹100"/>
-//             <Book image="https://tse2.mm.bing.net/th/id/OIP.RM5JkPJFCnEs3bCJnjK7dwAAAA?pid=Api&P=0&h=180" name="React" price="₹100"/>
-//             <Book />
-//             <Book />
-//             <Book />
-//             <Book />
-//         </div>
-//     )
-// }
 const App = ()=>{
-    const books = [
-        {
-            image: "https://tse1.mm.bing.net/th/id/OIP.g9UHblwHf4VFKhoT4c2UYAHaHa?pid=Api&P=0&h=180",
-            title: "Math",
-            price: 381
-        },
-        {
-            image: "https://tse4.mm.bing.net/th/id/OIP.ZI2qc8SyU0tUS-LY5e65GgHaHa?pid=Api&P=0&h=180",
-            title: "Chemistry",
-            price: 400
-        },
-        {
-            image: "https://tse1.mm.bing.net/th/id/OIP.-l00wrb6j72Wn3Jox29rjQHaHa?pid=Api&P=0&h=180",
-            title: "Physics",
-            price: 200
-        }
-    ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "bookList",
-        children: books.map((b, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookJsxDefault.default), {
-                book: b
-            }, i, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookJsxDefault.default), {
+                image: "https://tse2.mm.bing.net/th/id/OIP.RM5JkPJFCnEs3bCJnjK7dwAAAA?pid=Api&P=0&h=180",
+                name: "React",
+                price: "\u20B9100"
+            }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 25,
-                columnNumber: 21
-            }, undefined))
-    }, void 0, false, {
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookJsxDefault.default), {
+                image: "https://tse2.mm.bing.net/th/id/OIP.RM5JkPJFCnEs3bCJnjK7dwAAAA?pid=Api&P=0&h=180",
+                name: "React",
+                price: "\u20B9100"
+            }, void 0, false, {
+                fileName: "App.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 22,
+        lineNumber: 6,
         columnNumber: 9
     }, undefined);
 };
 _c = App;
+// const App=()=>{
+//     const books=[{image:"https://tse1.mm.bing.net/th/id/OIP.g9UHblwHf4VFKhoT4c2UYAHaHa?pid=Api&P=0&h=180",title:"Math",price: 381},
+//         {image:"https://tse4.mm.bing.net/th/id/OIP.ZI2qc8SyU0tUS-LY5e65GgHaHa?pid=Api&P=0&h=180",title:"Chemistry", price: 400},
+//         {image:"https://tse1.mm.bing.net/th/id/OIP.-l00wrb6j72Wn3Jox29rjQHaHa?pid=Api&P=0&h=180",title:"Physics",price: 200}
+//     ]
+//     return (
+//         <div className='bookList'>
+//             {books.map((b,i)=>
+//                 (
+//                     <Book key={i} book={b}/>
+//                 )
+//             )}
+//         </div>
+//     )
+// }
 exports.default = App; // const parent=document.getElementById("root");
  // const root=ReactDOM.createRoot(parent);
  // root.render(<Book/>)
@@ -17465,7 +17464,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"./Book.jsx":"1r82H","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./App.css":"7g3a6","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1r82H":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./App.css":"7g3a6","./Book.jsx":"1r82H","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7g3a6":[function() {},{}],"1r82H":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$f269 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$f269.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -17478,55 +17477,65 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _appCss = require("./App.css");
-function Book({ book }) {
+function Book({ image, name, price }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: book.image,
+                src: image,
                 width: "200",
                 height: "200",
                 alt: "book-img"
             }, void 0, false, {
                 fileName: "Book.jsx",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: [
                     "Title: ",
-                    book.name
-                ]
-            }, void 0, true, {
-                fileName: "Book.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    "Price: ",
-                    book.price
+                    name
                 ]
             }, void 0, true, {
                 fileName: "Book.jsx",
                 lineNumber: 8,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    "Price: ",
+                    price
+                ]
+            }, void 0, true, {
+                fileName: "Book.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 children: "ADD TO CART"
             }, void 0, false, {
                 fileName: "Book.jsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "Book.jsx",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 9
     }, this);
 }
 _c = Book;
+// function Book({book}){
+//     return(
+//         <div className="card">
+//             <img src={book.image} width="200" height="200" alt="book-img"/>
+//             <h3>Title: {book.name}</h3>
+//             <h4>Price: {book.price}</h4>
+//             <button>ADD TO CART</button>
+//         </div>
+//     );
+// }
 exports.default = Book;
 var _c;
 $RefreshReg$(_c, "Book");
@@ -17536,7 +17545,7 @@ $RefreshReg$(_c, "Book");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7g3a6":[function() {},{}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7g3a6":[function() {},{}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -19844,6 +19853,6 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7g3a6":[function() {},{}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequired122", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["edK2g","3UcWX"], "3UcWX", "parcelRequired122", {}, null, null, "http://localhost:51917")
 
 //# sourceMappingURL=Book-Parcel-App.2e6211d3.js.map
