@@ -1,0 +1,30 @@
+.card{
+  width: 400px;
+  height: 400px;
+  font: medium;
+  background-color: aqua;
+  color: white;
+  border: 5px solid blue;
+  border-radius: 10px;
+  padding: 25px;
+  margin: auto;
+  text-align: center;
+}
+
+.bookList{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header{
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+}
+.footer{
+  background-color: darkmagenta;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+}
